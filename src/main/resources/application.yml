@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    username: zolvces
+    password: zolvces
+    addresses: 192.168.39.129:5672
+#   也可在connectFactory中配置
+    publisher-confirms: true
+    publisher-returns: true
+
+  datasource:
+    url: jdbc:mysql://192.168.39.129:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+
+  jpa:
+    hibernate:
+      ddl-auto: update
